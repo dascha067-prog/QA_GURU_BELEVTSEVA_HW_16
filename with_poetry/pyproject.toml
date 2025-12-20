@@ -1,0 +1,26 @@
+[project]
+name = "with-poetry"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "darya"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+selenium = "4.36.0"
+selene="2.0.0rc9"
+pytest = "8.4.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pylint (>=4.0.4,<5.0.0)"
+]
